@@ -1,0 +1,99 @@
+/* Contact */
+#contact-background {
+  background: url(../images/camera.jpg) no-repeat top/cover;
+  background-attachment: fixed;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#contact-background .fix-center {
+  padding: 0 5%;
+}
+
+#contact-background .column-left, #contact-background .column-right {
+  margin-top: 12%;
+  width: 70%;
+  height: 300px;
+  opacity: .8;
+  -webkit-transform: skewX(40deg);
+          transform: skewX(40deg);
+  -webkit-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+#contact-background .column-left:hover, #contact-background .column-right:hover {
+  opacity: .99;
+}
+
+#contact-background .column-left {
+  background-color: #01568D;
+}
+
+#contact-background .column-left .magic-background {
+  position: absolute;
+  top: 35%;
+  padding: 27px 10px;
+  background: white;
+  -webkit-transform: skewX(-40deg);
+          transform: skewX(-40deg);
+  width: 120%;
+  min-height: 20%;
+  opacity: .7;
+  border-radius: 7px;
+  margin-left: -80px;
+}
+
+#contact-background .column-left .magic-background h2 {
+  width: 100%;
+  text-align: center;
+  color: #01568D;
+}
+
+#contact-background .column-right {
+  background-color: #4B3736;
+}
+
+#contact-background .column-right .table {
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  width: 120% !important;
+  height: 20%;
+  color: rgba(0, 0, 0, 0.897);
+  opacity: .7;
+  border-radius: 7px;
+  -webkit-transform: skewX(-40deg);
+          transform: skewX(-40deg);
+}
+
+#contact-background .column-right .table th, #contact-background .column-right .table td {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding: 13px 5px;
+  text-align: center;
+  color: #a3231a;
+}
+
+#contact-background .column-right .table td {
+  background-color: rgba(0, 0, 0, 0.897);
+  color: #fff;
+}
+
+#contact-background .column-right .table td:first-child {
+  border-bottom-left-radius: 7px;
+}
+
+#contact-background .column-right .table td:last-child {
+  border-bottom-right-radius: 7px;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #a3231a;
+}
+
+::selection {
+  color: #fff;
+  background: #a3231a;
+}
+/*# sourceMappingURL=var-nes-inh.css.map */

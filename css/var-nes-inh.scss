@@ -1,0 +1,98 @@
+$primary: rgba(0, 0, 0, 0.897);
+$secondary: #a3231a;
+$left-block: #01568D;
+$right-block: #4B3736;
+
+/* Contact */
+#contact-background {
+    background: url(../images/camera.jpg) no-repeat top/cover;
+    background-attachment: fixed;
+    width: 100vw;
+    overflow-x: hidden;
+
+    .fix-center {
+        padding: 0 5%;
+    }
+
+    %column {
+        margin-top: 12%;
+        width: 70%;
+        height: 300px;
+        opacity: .8;
+        transform: skewX(40deg);
+        transition: all ease .7s; 
+
+        &:hover {
+            opacity: .99;
+        }
+    }
+
+    .column-left {
+        @extend %column;
+        background-color: $left-block;
+
+        .magic-background {
+            position: absolute;
+            top: 35%;
+            padding: 27px 10px;
+            background: rgb(255, 255, 255);
+            transform: skewX(-40deg);
+            width: 120%;
+            min-height: 20%;
+            opacity: .7;
+            border-radius: 7px;
+            margin-left: -80px;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+                color: $left-block;
+            }
+        }
+    }
+
+    .column-right {
+        @extend %column;
+        background-color: $right-block;
+
+        .table {
+            position: absolute;
+            top: 35%;
+            left: -10%;
+            width: 120% !important;
+            height: 20%;
+            color: $primary;
+            opacity: .7;
+            border-radius: 7px;
+            transform: skewX(-40deg);
+
+            th, td {
+                border-top: none !important;
+                border-bottom: none !important;
+                padding: 13px 5px;
+                text-align: center;
+                color: $secondary;
+            }
+
+            td {
+                background-color: $primary;
+                color: #fff;
+
+                &:first-child {
+                    border-bottom-left-radius: 7px;
+                }
+
+                &:last-child {
+                    border-bottom-right-radius: 7px;
+                }
+            }
+        } 
+    }
+}
+
+::selection {
+    color: #fff;
+    background: $secondary;
+}
+
+
